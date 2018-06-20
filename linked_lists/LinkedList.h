@@ -22,6 +22,16 @@ class LinkedList
     virtual ~LinkedList() {  }
 
     /**
+     * insert a new node into the list
+     */
+    virtual void append(Node *n) = 0;
+
+    /**
+     * remove a node from the list
+     */
+    virtual void remove(Node *n) = 0;
+
+    /**
      * print list 
      */
     void print() const

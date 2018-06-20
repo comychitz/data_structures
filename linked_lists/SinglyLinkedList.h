@@ -13,7 +13,7 @@ class SinglyLinkedList : public LinkedList
     /**
      * insert a new node into the list
      */
-    void insert(Node *n)
+    void append(Node *n)
     {
       if(first == NULL)
       {
@@ -28,7 +28,7 @@ class SinglyLinkedList : public LinkedList
     }
 
     /**
-     * delete a node in the list
+     * remove a node from the list
      */
     void remove(const Node *n)
     {

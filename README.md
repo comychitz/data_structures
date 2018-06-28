@@ -33,6 +33,19 @@ Some example applications where trees are used:
     * Databases
     * Router-tables
 
+Common operations performed on trees:
+* enumerating the tree or a section of it
+* searching
+* add/deleting an item to a specific position
+* pruning: removing a section
+* grafting: adding a section
+* find the root for any node
+* finding the lowest common ancestor of two nodes
+
+### tree properties
+* balanced vs unbalanced
+* sorted vs unsorted
 
 ## References
+* [Tree (Data Structure) - Wikipedia](https://en.wikipedia.org/wiki/Tree_(data_structure))
 * [Know Thy Complexities!](http://bigocheatsheet.com)

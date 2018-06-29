@@ -49,3 +49,4 @@ Common operations performed on trees:
 ## References
 * [Tree (Data Structure) - Wikipedia](https://en.wikipedia.org/wiki/Tree_(data_structure))
 * [Know Thy Complexities!](http://bigocheatsheet.com)
+* [Data Structures Reference - InterviewCake](https://www.interviewcake.com/data-structures-reference)

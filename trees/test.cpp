@@ -14,6 +14,7 @@ int main( int argc, const char *argv[] )
   tree.insert(3);
 
   tree.print();
+  tree.printDF();
   
   return 0;
 }

@@ -67,7 +67,30 @@ class BinaryTree
         }
         q.pop();
       }
-      std::cout << std::endl << std::endl;
+      std::cout << std::endl;
+    }
+
+    /**
+     * print the binary tree depth-first
+     */
+    virtual void printDF() const
+    {
+      printDF_(root);
+      std::cout << std::endl;
+    }
+
+  private:
+    void printDF_(Node *n) const
+    {
+      std::cout << n->value << " ";
+      if(n->left)
+      {
+        printDF_(n->left);
+      }
+      if(n->right)
+      {
+        printDF_(n->right);
+      }
     }
 };
 

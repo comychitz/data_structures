@@ -1,8 +1,8 @@
-#include "BinaryTreeUnsorted.h"
+#include "BinarySearchTree.h"
 
 int main( int argc, const char *argv[] )
 {
-  BinaryTreeUnsorted tree;
+  BinarySearchTree tree;
 
   tree.insert(10);
   tree.insert(8);

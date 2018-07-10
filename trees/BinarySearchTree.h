@@ -1,13 +1,13 @@
 #include "BinaryTree.h"
 
-class BinaryTreeUnsorted : public BinaryTree
+class BinarySearchTree : public BinaryTree
 {
   public:
-    BinaryTreeUnsorted() 
+    BinarySearchTree() 
     {
     }
 
-    virtual ~BinaryTreeUnsorted() 
+    virtual ~BinarySearchTree() 
     { 
     }
 

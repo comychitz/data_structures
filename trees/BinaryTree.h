@@ -1,5 +1,5 @@
-#ifndef _BINARY_SEARCH_TREE_H_
-#define _BINARY_SEARCH_TREE_H_
+#ifndef _BINARY_TREE_H_
+#define _BINARY_TREE_H_
 
 #include <iostream>
 #include <queue>

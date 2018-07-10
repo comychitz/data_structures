@@ -1,3 +1,6 @@
+#ifndef _BINARY_SEARCH_TREE_H_ 
+#define _BINARY_SEARCH_TREE_H_ 
+
 #include "BinaryTree.h"
 
 class BinarySearchTree : public BinaryTree
@@ -54,3 +57,4 @@ class BinarySearchTree : public BinaryTree
       }
     }
 };
+#endif

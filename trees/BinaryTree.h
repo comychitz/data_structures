@@ -2,6 +2,7 @@
 #define _BINARY_SEARCH_TREE_H_
 
 #include <iostream>
+#include <queue>
 
 class BinaryTree
 {
@@ -18,6 +19,7 @@ class BinaryTree
         Node *left, *right;
         int value;
     };
+    typedef std::queue<Node*> NodeQueue;
 
     Node *root;
 
@@ -37,44 +39,35 @@ class BinaryTree
 
     /**
      * print the binary tree breadth-first
-     * NOTE: unbalanced trees will not be completely printed breadth-first 
      */
     virtual void print() const
     {
       if(root == NULL)
       {
         std::cout << "(empty)";
+        return;
       }
-      else 
+
+      NodeQueue q;
+      std::cout << root->value << " ";
+      q.push(root);
+
+      while(!q.empty())
       {
-        std::cout << root->value << " ";
-        print_(root);
+        Node *n = q.front();
+        if(n->left != NULL)
+        {
+          std::cout << n->left->value << " ";
+          q.push(n->left);
+        }
+        if(n->right != NULL)
+        {
+          std::cout << n->right->value << " ";
+          q.push(n->right);
+        }
+        q.pop();
       }
       std::cout << std::endl << std::endl;
-    }
-
-  private:
-    void print_(Node *node) const
-    {
-      if(node->left != NULL)
-      {
-        std::cout << node->left->value << " ";
-      }
-      
-      if(node->right != NULL)
-      {
-        std::cout << node->right->value << " ";
-      }
-
-      if(node->left != NULL)
-      {
-        print_(node->left);
-      }
-
-      if(node->right != NULL)
-      {
-        print_(node->right);
-      }
     }
 };
 

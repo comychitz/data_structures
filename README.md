@@ -46,6 +46,11 @@ Common operations performed on trees:
 * balanced vs unbalanced
 * sorted vs unsorted
 
+### tree traversal
+* depth-first search
+* breadth-first search
+    * typical solution involves a queue
+
 ## References
 * [Tree (Data Structure) - Wikipedia](https://en.wikipedia.org/wiki/Tree_(data_structure))
 * [Know Thy Complexities!](http://bigocheatsheet.com)

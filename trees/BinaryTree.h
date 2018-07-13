@@ -38,6 +38,39 @@ class BinaryTree
     virtual void remove(Node *node) = 0;
 
     /**
+     * determine depth of the binary tree
+     */
+    int depth() const
+    {
+      int depth = 0;
+
+      if(root != NULL)
+      {
+        depth = 1;
+        depth = getTreeDepth_(root, depth);
+      }
+      return depth;
+    }
+
+    int getTreeDepth_(Node *node, int depth) const
+    {
+      if(node->left != NULL || node->right != NULL)
+      {
+        depth++;
+      }
+      int d1 = depth, d2 = depth;
+      if(node->left != NULL)
+      {
+        d1 = getTreeDepth_(node->left, depth);
+      }
+      if(node->right != NULL)
+      {
+        d2 = getTreeDepth_(node->right, depth);
+      }
+      return d1 > d2 ? d1 : d2;
+    }
+
+    /**
      * print the binary tree breadth-first
      */
     virtual void print() const

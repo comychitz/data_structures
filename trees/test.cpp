@@ -15,6 +15,8 @@ int main( int argc, const char *argv[] )
 
   tree.print();
   tree.printDF();
+
+  std::cout << "Tree depth: " << tree.depth() << std::endl;
   
   return 0;
 }

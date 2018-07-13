@@ -51,6 +51,17 @@ Common operations performed on trees:
 * breadth-first search
     * typical solution involves a queue
 
+### binary search trees
+* balanced binary search trees are efficient for performing operations because
+    the time taken to perform an operations (ex. search) is directly
+    proportional to the height of the tree.
+* if a binary tree isn't balanced, and keys are added to the tree in sorted
+    order, the tree will effectively become a linked list, with a height of n.
+* self-balancing binary search trees:
+    * AVL tree
+    * B-tree
+    * Red-black tree
+
 ## References
 * [Tree (Data Structure) - Wikipedia](https://en.wikipedia.org/wiki/Tree_(data_structure))
 * [Know Thy Complexities!](http://bigocheatsheet.com)

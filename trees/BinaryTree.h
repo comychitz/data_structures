@@ -50,25 +50,7 @@ class BinaryTree
         depth = getTreeDepth_(root, depth);
       }
       return depth;
-    }
-
-    int getTreeDepth_(Node *node, int depth) const
-    {
-      if(node->left != NULL || node->right != NULL)
-      {
-        depth++;
-      }
-      int d1 = depth, d2 = depth;
-      if(node->left != NULL)
-      {
-        d1 = getTreeDepth_(node->left, depth);
-      }
-      if(node->right != NULL)
-      {
-        d2 = getTreeDepth_(node->right, depth);
-      }
-      return d1 > d2 ? d1 : d2;
-    }
+    } 
 
     /**
      * print the binary tree breadth-first
@@ -124,6 +106,24 @@ class BinaryTree
       {
         printDF_(n->right);
       }
+    }
+
+    int getTreeDepth_(Node *node, int depth) const
+    {
+      if(node->left != NULL || node->right != NULL)
+      {
+        depth++;
+      }
+      int d1 = depth, d2 = depth;
+      if(node->left != NULL)
+      {
+        d1 = getTreeDepth_(node->left, depth);
+      }
+      if(node->right != NULL)
+      {
+        d2 = getTreeDepth_(node->right, depth);
+      }
+      return d1 > d2 ? d1 : d2;
     }
 };
 

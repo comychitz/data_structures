@@ -62,6 +62,31 @@ Common operations performed on trees:
     * B-tree
     * Red-black tree
 
+## heap
+A heap is a special-purpose tree structure that satisfies the heap property:
+    *if P is a parent of C, then the value of P must be greater or equal to (in
+    a max heap) than the value of C.*
+
+A heap can be implemented using a tree as its underlying strucutre, but more
+commonly implemnted as an array since pointers are not required between
+elements. In a binary heap that is implemented using an array the children of a
+node can be calculated using `2n+1` and `2n+2`.
+
+Heaps are commonly used to implemented priority queues.
+
+### insertion
+When adding a node to a heap, append to the end of the heap first, then
+*sift-up* until the heap property is satisfied again. 
+To *sift-up* simply compare the current node with its parent, if the heap
+property is not satisfied, then swap the nodes. Repeat until property is
+satisfied. Insertion time complexity is `O(log(n))`.
+
+### deletion of root
+A common operation is to pop the top of the heap, thus potentially causing the
+heap property to become unsatisfied. To become a heap again, the last node is
+placed at the top of the tree and sifted down until no longer needed. Deletion
+time complexity is `O(log(n))`.
+
 ## References
 * [Tree (Data Structure) - Wikipedia](https://en.wikipedia.org/wiki/Tree_(data_structure))
 * [Know Thy Complexities!](http://bigocheatsheet.com)

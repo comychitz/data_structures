@@ -87,6 +87,56 @@ heap property to become unsatisfied. To become a heap again, the last node is
 placed at the top of the tree and sifted down until no longer needed. Deletion
 time complexity is `O(log(n))`.
 
+## graphs
+A graph is mathematical structure used to model pairwise relations between
+objects.  Graphs are a set of vertices and edges, where edges connect two
+vertices together, typically carrying a weight. 
+
+Operations:
+* adjacent
+* neighbors
+* add/remove vertex/edge
+* get edge/vertex value
+
+Representations:
+* adjacency list
+    * slow to remove vertices and edges, because it needs to find all vertices
+        or edges
+* adjacency matric
+    * slow to add or remove vertices, because matrix must be resized/copied
+* Incidence matrix
+    * slow to add or remove vertices and edges because matrics must be
+        resized/copied
+*Adjacency lists are generally preferred because they efficiently represent
+sparse graphs. An adjacency matrix is preferred if the graph is dense, that is
+the number of edges |E | is close to the number of vertices squared, |V |2, or
+if one must be able to quickly look up if there is an edge connecting two
+vertices*
+
+Properties of graphs:
+* directed or undirected
+* cyclic or acyclic graph
+
+Classes of graphs:
+* regular graph
+* complete graph
+* bipartite graph
+* connected graph
+* cycle graph
+* tree
+
+Problems that graphs data structures are used:
+* enumeration
+* graph coloring
+* route problems
+* network flow
+* visibility problems
+* covering problems
+
+### problems
+* traveling salesman problem
+* dijkstra's shortest path 
+
 ## References
 * [Tree (Data Structure) - Wikipedia](https://en.wikipedia.org/wiki/Tree_(data_structure))
 * [Know Thy Complexities!](http://bigocheatsheet.com)

@@ -68,7 +68,9 @@ void BinaryHeap::push(int val)
 
 void BinaryHeap::pop()
 {
-
+  //
+  // TODO
+  //
 }
 
 void BinaryHeap::print()

@@ -30,7 +30,7 @@ class SinglyLinkedList : public LinkedList
     /**
      * remove a node from the list
      */
-    void remove(const Node *n)
+    void remove(Node *n)
     {
       if(first == NULL)
       { // list is empty
@@ -57,6 +57,30 @@ class SinglyLinkedList : public LinkedList
           cur = cur->next;
         }
       }
+    }
+
+    void reverse()
+    {
+      Node *oldFirst = first;
+      first = reverse_(first);
+      last = oldFirst;
+    }
+
+  private:
+    Node *reverse_(Node *n)
+    {
+      Node *newHead = NULL;
+      if(n->next->next == NULL)
+      {
+        newHead = n->next;
+      }
+      else
+      {
+        newHead = reverse_(n->next);
+      }
+      n->next->next = n;
+      n->next = NULL;
+      return newHead;
     }
 };
 

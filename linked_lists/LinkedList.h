@@ -32,6 +32,11 @@ class LinkedList
     virtual void remove(Node *n) = 0;
 
     /**
+     * reverse the linked-list 
+     */
+    virtual void reverse() = 0;
+
+    /**
      * print list 
      */
     void print() const

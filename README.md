@@ -1,6 +1,13 @@
 # data structures
 Practice coding data structures in C++.
 
+## arrays
+* Dynamic vs static arrays
+
+## hash sets & tables
+* constant O(1) lookups & inserts (O(n) worst case, in case underlying array
+    needs to be resized).
+
 ## linked lists
 Linked lists is a data structure to typically keep an unordered sequence of
 items. Insertion & deletion are *constant* time. All other operations are linear

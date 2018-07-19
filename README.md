@@ -1,6 +1,7 @@
 # data structures & algorithms
 Practice coding data structures and algorithms in C++.
 
+- [o notation](#o-notation)
 - [arrays](#arrays)
 - [hash sets & tables](#hash-sets---tables)
 - [linked lists](#linked-lists)
@@ -17,6 +18,20 @@ Practice coding data structures and algorithms in C++.
 - [References](#references)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+## o notation
+
+| Notation | Name | Notes |
+|---|---|---|
+| O(1) | constant | 
+| O(log n) | logarithmic |
+| O(n) | linear |
+| O(n log(n)) | linearithmic, loglinear, or quasilinear |
+| O(n^2) | quadratic | 
+| O(n^c) | polynomial |
+| O(c^n) | exponential | where c > 1 
+| O(n!) | factorial | 
+
 
 ## arrays
 * Dynamic vs static arrays
@@ -161,6 +176,32 @@ Problems that graphs data structures are used:
 * traveling salesman problem
 * dijkstra's shortest path 
 
+## searching
+Searching problems are ubiquitous in computer science. Storing values and
+searching through them later is a common technique that aids in solving various
+problems. There are many searching algorithms, some inefficient, but we'll keep
+our focus on the better ones.
+
+### binary search
+* performs search on a sorted array in logarithmic time (average and worst case)
+* O(log n) time complexity
+* O(1) space complexity
+
+## sorting
+
+### heapsort
+* time complexity: O(n log(n)) average and worst
+* space complexity: O(1)
+
+### mergesort
+* a divide and conquer algorithm
+* time complexity: O(n log(n)) (average and worst)
+* space complexity O(n)
+
+### quicksort
+* time complexity: O(n log(n)) (average and worst)
+* space complexity O(log(n))
+
 ## dynamic programming
 Dynamic programming is thought to be as the opposite approach that recursion
 takes. Recursion is a top-down approach while dynamic programming is bottom-up.
@@ -173,7 +214,7 @@ The two key attributes of a dynamic programming problem are:
 * optimal substructure
 * overlapping sub-problems
 
-7 steps to solve a dynamic programming problem:
+7 steps to solve a dynamic programming problem ([DP tutorial](http://blog.refdash.com/dynamic-programming-tutorial-example/))
 * recognize a DP problem
 * identify problem variables
 * clearly express the recurrence relation
@@ -181,7 +222,6 @@ The two key attributes of a dynamic programming problem are:
 * decide if you want to implement it iteratively or recursively
 * add memoization
 * determine time complexity
-([source](http://blog.refdash.com/dynamic-programming-tutorial-example/))
 
 Common dynamic programming problems are:
 * the knapsack problem

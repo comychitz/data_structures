@@ -1,5 +1,22 @@
-# data structures
+# data structures & algorithms
 Practice coding data structures and algorithms in C++.
+
+- [arrays](#arrays)
+- [hash sets & tables](#hash-sets---tables)
+- [linked lists](#linked-lists)
+- [trees](#trees)
+  * [tree properties](#tree-properties)
+  * [tree traversal](#tree-traversal)
+  * [binary search trees](#binary-search-trees)
+- [heap](#heap)
+  * [insertion](#insertion)
+  * [deletion of root](#deletion-of-root)
+- [graphs](#graphs)
+  * [problems](#problems)
+- [dynamic programming](#dynamic-programming)
+- [References](#references)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ## arrays
 * Dynamic vs static arrays

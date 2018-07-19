@@ -1,5 +1,5 @@
 # data structures
-Practice coding data structures in C++.
+Practice coding data structures and algorithms in C++.
 
 ## arrays
 * Dynamic vs static arrays
@@ -143,6 +143,32 @@ Problems that graphs data structures are used:
 ### problems
 * traveling salesman problem
 * dijkstra's shortest path 
+
+## dynamic programming
+Dynamic programming is thought to be as the opposite approach that recursion
+takes. Recursion is a top-down approach while dynamic programming is bottom-up.
+Although dynamic programming uses recursion, it often solves a problem by
+calculating all possibilities and then choosing the best one. Along with this,
+*memoization* is used to improve efficiency, by storing values already calculated
+previously.
+
+The two key attributes of a dynamic programming problem are:
+* optimal substructure
+* overlapping sub-problems
+
+7 steps to solve a dynamic programming problem:
+* recognize a DP problem
+* identify problem variables
+* clearly express the recurrence relation
+* identify the base cases
+* decide if you want to implement it iteratively or recursively
+* add memoization
+* determine time complexity
+([source](http://blog.refdash.com/dynamic-programming-tutorial-example/))
+
+Common dynamic programming problems are:
+* the knapsack problem
+* egg dropping problem
 
 ## References
 * [Tree (Data Structure) - Wikipedia](https://en.wikipedia.org/wiki/Tree_(data_structure))

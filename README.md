@@ -50,6 +50,9 @@ asymptotic bound, Big Omega gives the lower bound, and Big Theta gives both.
 * constant O(1) lookups & inserts (O(n) worst case, in case underlying array
     needs to be resized).
 
+### hashing function
+* 
+
 ## linked lists
 Linked lists is a data structure to typically keep an unordered sequence of
 items. Insertion & deletion are *constant* time. All other operations are linear

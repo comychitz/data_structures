@@ -14,12 +14,23 @@ Practice coding data structures and algorithms in C++.
   * [deletion of root](#deletion-of-root)
 - [graphs](#graphs)
   * [problems](#problems)
+- [searching](#searching)
+  * [binary search](#binary-search)
+- [sorting](#sorting)
 - [dynamic programming](#dynamic-programming)
 - [References](#references)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ## o notation
+Big O notation, also called asymptotic notation, is a mathematical notation that
+describes the limiting behavior of a function. It is used to analyze algorithms
+as input size grows. The letter O is used because the growth rate of a function
+is referred to as the *order of the function*.
+
+The precise use of asymptotic notation is abused because big O notation isn't
+completely accurate in all contents. Technically, Big O gives the upper
+asymptotic bound, Big Omega gives the lower bound, and Big Theta gives both.
 
 | Notation | Name | Notes |
 |---|---|---|
@@ -31,7 +42,6 @@ Practice coding data structures and algorithms in C++.
 | O(n^c) | polynomial |
 | O(c^n) | exponential | where c > 1 
 | O(n!) | factorial | 
-
 
 ## arrays
 * Dynamic vs static arrays
@@ -188,19 +198,14 @@ our focus on the better ones.
 * O(1) space complexity
 
 ## sorting
+Ordering elements in a list.
 
-### heapsort
-* time complexity: O(n log(n)) average and worst
-* space complexity: O(1)
-
-### mergesort
-* a divide and conquer algorithm
-* time complexity: O(n log(n)) (average and worst)
-* space complexity O(n)
-
-### quicksort
-* time complexity: O(n log(n)) (average and worst)
-* space complexity O(log(n))
+| Name | Best | Average | Worst | Space | Stable | Notes |
+|---|---|---|---|---|---|
+| Quicksort | O(nlog(n)) | O(nlog(n)) | O(n^2) | O(n) | depends on implementation | 
+| Mergesort | O(nlog(n)) | O(nlog(n)) | O(nlog(n)) | O(n) | yes |
+| Heapsort | O(nlog(n)) (distinct keys) O(n) (equal keys) | O(nlog(n)) |
+O(nlog(n)) | O(1) | No |
 
 ## dynamic programming
 Dynamic programming is thought to be as the opposite approach that recursion

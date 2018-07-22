@@ -29,7 +29,7 @@ as input size grows. The letter O is used because the growth rate of a function
 is referred to as the *order of the function*.
 
 The precise use of asymptotic notation is abused because big O notation isn't
-completely accurate in all contents. Technically, Big O gives the upper
+completely accurate in all contexts. Technically, Big O gives the upper
 asymptotic bound, Big Omega gives the lower bound, and Big Theta gives both.
 
 | Notation | Name | Notes |

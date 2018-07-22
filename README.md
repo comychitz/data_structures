@@ -217,6 +217,26 @@ calculating all possibilities and then choosing the best one. Along with this,
 *memoization* is used to improve efficiency, by storing values already calculated
 previously.
 
+### references
+* [MIT OpenCourseWare - Dynamic Programming w/Eric Demaine](https://www.youtube.com/watch?v=OQ5jsbhAv_M)
+
+### memoization
+* memoize - came from the idea of writing down your subproblem solutions on a
+    memopad. to memoize is to write down on memopad, in other words, remember.
+
+### bottom-up approach
+* exactly same computation as the memoized version
+* performing a topological sort of subproblem dependency DAG
+* can usually
+
+DP = recursion + memoization + guessing
+* memoize (remember) + re-use solutions to subproblems that help solve the
+    problem
+* time = # subproblems * time/subproblem
+    * or, more precisely the sum of all subproblems
+    * for fibonacci implemented using dynamic programming, n is the number of
+        subproblems and the time per subproblem is constant (O(1))
+
 The two key attributes of a dynamic programming problem are:
 * optimal substructure
 * overlapping sub-problems
@@ -230,7 +250,9 @@ The two key attributes of a dynamic programming problem are:
 * add memoization
 * determine time complexity
 
-Common dynamic programming problems are:
+Common problems solved using dynamic programming
+* fibonacci number
+* shortest path problem
 * the knapsack problem
 * egg dropping problem
 

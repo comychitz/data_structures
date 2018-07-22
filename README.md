@@ -207,8 +207,7 @@ Ordering elements in a list.
 |---|---|---|---|---|---|---|
 | Quicksort | O(nlog(n)) | O(nlog(n)) | O(n^2) | O(n) | depends on implementation | 
 | Mergesort | O(nlog(n)) | O(nlog(n)) | O(nlog(n)) | O(n) | yes |
-| Heapsort | O(nlog(n)) (distinct keys) O(n) (equal keys) | O(nlog(n)) |
-O(nlog(n)) | O(1) | No |
+| Heapsort | O(nlog(n)) (distinct keys) O(n) (equal keys) | O(nlog(n)) | O(nlog(n)) | O(1) | No |
 
 ## dynamic programming
 Dynamic programming is thought to be as the opposite approach that recursion

@@ -116,8 +116,13 @@ Common operations performed on trees:
 * traversals
     * depth first traversals: 
         * In Order - left, root, right
+            * use case: gives ascending order of elements 
         * Pre Order - root, left, right
+            * use case: create a copy of the tree
+            * use case: get prefix expression of an expression tree
         * Post Order - left, right, root
+            * use case: used to delete thre tree.
+            * get postfix expression of an expression tree
 * if we perform in-order traversal on a binary search tree, the result should be
     an ordered list of the elements
 * self-balancing binary search trees:

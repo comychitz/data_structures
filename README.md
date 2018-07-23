@@ -102,13 +102,24 @@ Common operations performed on trees:
 * depth-first search
 * breadth-first search
     * typical solution involves a queue
+* in-order, pre-order, post-order traversal
 
 ### binary search trees
+* rule for a binary search tree:
+    *for every node, the left childe must be less or equal and the right
+    child must be greater*
 * balanced binary search trees are efficient for performing operations because
     the time taken to perform an operations (ex. search) is directly
     proportional to the height of the tree.
 * if a binary tree isn't balanced, and keys are added to the tree in sorted
     order, the tree will effectively become a linked list, with a height of n.
+* traversals
+    * depth first traversals: 
+        * In Order - left, root, right
+        * Pre Order - root, left, right
+        * Post Order - left, right, root
+* if we perform in-order traversal on a binary search tree, the result should be
+    an ordered list of the elements
 * self-balancing binary search trees:
     * AVL tree
     * B-tree

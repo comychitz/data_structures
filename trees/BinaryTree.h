@@ -94,7 +94,45 @@ class BinaryTree
       std::cout << std::endl;
     }
 
+    /**
+     * print the binary tree, traversing it in order
+     */
+    virtual void printInOrder() const
+    {
+      printIO_(root);
+      std::cout << std::endl;
+    }
+
   private:
+    void printIO_(Node *n) const
+    {
+      if(n->left != NULL)
+      {
+        if(n->left->left != NULL ||
+           n->left->right != NULL)
+        {
+          printIO_(n->left);
+        }
+        else 
+        {
+          std::cout << n->left->value << " ";
+        }
+      }
+      std::cout << n->value << " ";
+      if(n->right != NULL)
+      {
+        if(n->right->left != NULL ||
+           n->right->left != NULL)
+        {
+          printIO_(n->right);
+        }
+        else 
+        {
+          std::cout << n->right->value << " ";
+        }
+      }
+    }
+
     void printDF_(Node *n) const
     {
       std::cout << n->value << " ";

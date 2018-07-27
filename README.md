@@ -22,6 +22,14 @@ Practice coding data structures and algorithms in C++.
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
+## bitwise manipulation
+* xor operation
+    * tell whether two bits are unequal
+    * it is an optional bit-flipper (the deciding input chooses whether to
+        invert the data input)
+    * it tells whether this is an odd number of 1 bits (A^B^C^D^E is true iff an
+        odd number of the variables are true)
+
 ## o notation
 Big O notation, also called asymptotic notation, is a mathematical notation that
 describes the limiting behavior of a function. It is used to analyze algorithms

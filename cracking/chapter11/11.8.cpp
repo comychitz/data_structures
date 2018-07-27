@@ -17,6 +17,27 @@
  * getRankOfNumber(1) = 0
  * getRankOfNumber(3) = 1
  * getRankOfNumber(4) = 3 
+ *
+ * Approach:
+ *   - Need to keep values sorted to be able to quickly get rank of number
+ *   - track() will add the new value to the sorted list
+ *
+ * Solution #1:
+ *   - merge sort new values into list each time - O(nlog(n)) per insert
+ *   - O(n) for getting rank
+ *
+ * Solution #2:
+ *   - keep list of pairs, as values come in increment the rank (O(n) per
+ *   insert).
+ *   - O(n) for getting rank
+ *
+ * Solution #3:
+ *   - keep map of values and their rank - insert would be O(n)
+ *   - O(1) for getting rank
+ *
+ * Solution #4:
+ *   - use a linked list for inserting - O(n) per insert
+ *   - O(n) for getting rank, but less space used.
  */
 
 

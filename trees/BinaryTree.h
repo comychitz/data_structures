@@ -90,7 +90,7 @@ class BinaryTree
      */
     virtual void printDF() const
     {
-      printDF_(root);
+      printDF_(root, 0);
       std::cout << std::endl;
     }
 
@@ -133,16 +133,16 @@ class BinaryTree
       }
     }
 
-    void printDF_(Node *n) const
+    void printDF_(Node *n, int depth) const
     {
-      std::cout << n->value << " ";
+      std::cout << n->value << " (depth: " << depth << ")" << std::endl;
       if(n->left)
       {
-        printDF_(n->left);
+        printDF_(n->left, depth+1);
       }
       if(n->right)
       {
-        printDF_(n->right);
+        printDF_(n->right, depth+1);
       }
     }
 

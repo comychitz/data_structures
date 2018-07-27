@@ -51,7 +51,9 @@ asymptotic bound, Big Omega gives the lower bound, and Big Theta gives both.
     needs to be resized).
 
 ### hashing function
-* 
+* the result of a hashing function for a hash table should be the index of the
+    array the value is to be placed into. ideally, collisions should be as
+    limited as possible
 
 ## linked lists
 Linked lists is a data structure to typically keep an unordered sequence of

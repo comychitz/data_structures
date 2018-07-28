@@ -22,13 +22,43 @@ Practice coding data structures and algorithms in C++.
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
-## bitwise manipulation
+## bit manipulation & operations
 * xor operation
     * tell whether two bits are unequal
     * it is an optional bit-flipper (the deciding input chooses whether to
         invert the data input)
     * it tells whether this is an odd number of 1 bits (A^B^C^D^E is true iff an
         odd number of the variables are true)
+* tips and tricks
+    * when doing additions, try and notice when one of the operands are 2^n,
+        becuase we can just perform shifting if needed
+* getting/clearing/setting bits in a number
+    * getting a bit
+        ```c++
+           int mask = 1 << i; 
+           return ((num&mask) != 0);
+        ```
+    * setting a bit
+        ```c++
+           int mask = 1 << i;
+           return num | mask;
+        ```
+    * clearing a bit
+        * opposite of setting a bit
+        ```c++
+           int mask = ~(1 << i);
+           return num & mask;
+        ```
+    * clear bits MSB to i (inclusive)
+        ```c++
+           int mask = (1<<i+1)-1;
+           return num & mask;
+        ```
+    * clear bits 0 to i (inclusive)
+        ```c++
+           int mask = (-1<<i);
+           return num & mask;
+        ```
 
 ## o notation
 Big O notation, also called asymptotic notation, is a mathematical notation that

@@ -1,6 +1,7 @@
 # data structures & algorithms
 Practice coding data structures and algorithms in C++.
 
+- [bit manipulation](#bit-manipulation)
 - [o notation](#o-notation)
 - [arrays](#arrays)
 - [hash sets & tables](#hash-sets---tables)
@@ -22,7 +23,7 @@ Practice coding data structures and algorithms in C++.
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
-## bit manipulation & operations
+## bit manipulation
 * xor operation
     * tell whether two bits are unequal
     * it is an optional bit-flipper (the deciding input chooses whether to
@@ -51,7 +52,7 @@ Practice coding data structures and algorithms in C++.
         ```
     * clear bits MSB to i (inclusive)
         ```c++
-           int mask = (1<<i+1)-1;
+           int mask = (1<<i)-1;
            return num & mask;
         ```
     * clear bits 0 to i (inclusive)

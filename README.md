@@ -1,6 +1,7 @@
 # data structures & algorithms
 Practice coding data structures and algorithms in C++.
 
+- [algorithms overview](#algorithms-overview)
 - [bit manipulation](#bit-manipulation)
 - [o notation](#o-notation)
 - [arrays](#arrays)
@@ -22,6 +23,17 @@ Practice coding data structures and algorithms in C++.
 - [References](#references)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+## algorithms overview
+* divide and conquer
+* greedy algorithm
+* dynamic programming
+* five algorithm approaches
+    * exemplify
+    * pattern matching
+    * simplify and generalize
+    * base case and build
+    * data structure brainstorm
 
 ## bit manipulation
 * xor operation

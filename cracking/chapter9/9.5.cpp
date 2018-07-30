@@ -46,7 +46,7 @@ std::vector<std::string> permString(const std::string &str)
 
 int main(int argc, const char *argv[])
 {
-  std::string input = "abc";
+  std::string input = "abcd";
   std::vector<std::string> perms = permString(input);
 
   std::vector<std::string>::iterator p;

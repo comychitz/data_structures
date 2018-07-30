@@ -150,6 +150,11 @@ Common operations performed on trees:
 ### tree properties
 * balanced vs unbalanced
 * sorted vs unsorted
+* full binary tree
+    * a tree that all nodes besides last level has two children
+* complete binary tree
+    * a tree that has all levels but last filled, and the last level has nodes
+        from the left populated
 
 ### tree traversal
 * depth-first search
@@ -159,10 +164,11 @@ Common operations performed on trees:
 
 ### binary search trees
 * rule for a binary search tree:
-    *for every node, the left childe must be less or equal and the right
+    * *for every node, the left child must be less or equal and the right
     child must be greater*
+* all operations of a binary search tree are `O(log(n))`
 * balanced binary search trees are efficient for performing operations because
-    the time taken to perform an operations (ex. search) is directly
+    the time taken to perform an operation (ex. search) is directly
     proportional to the height of the tree.
 * if a binary tree isn't balanced, and keys are added to the tree in sorted
     order, the tree will effectively become a linked list, with a height of n.
@@ -185,11 +191,11 @@ Common operations performed on trees:
 
 ## heap
 A heap is a special-purpose tree structure that satisfies the heap property:
-    *if P is a parent of C, then the value of P must be greater or equal to (in
+    * *if P is a parent of C, then the value of P must be greater or equal to (in
     a max heap) than the value of C.*
 
 A heap can be implemented using a tree as its underlying strucutre, but more
-commonly implemnted as an array since pointers are not required between
+commonly implemented as an array since pointers are not required between
 elements. In a binary heap that is implemented using an array the children of a
 node can be calculated using `2n+1` and `2n+2`.
 
@@ -228,7 +234,7 @@ Representations:
 * Incidence matrix
     * slow to add or remove vertices and edges because matrics must be
         resized/copied
-*Adjacency lists are generally preferred because they efficiently represent
+* *Adjacency lists are generally preferred because they efficiently represent
 sparse graphs. An adjacency matrix is preferred if the graph is dense, that is
 the number of edges |E | is close to the number of vertices squared, |V |2, or
 if one must be able to quickly look up if there is an edge connecting two
@@ -277,6 +283,9 @@ Ordering elements in a list.
 | Quicksort | O(nlog(n)) | O(nlog(n)) | O(n^2) | O(n) | depends on implementation | 
 | Mergesort | O(nlog(n)) | O(nlog(n)) | O(nlog(n)) | O(n) | yes |
 | Heapsort | O(nlog(n)) (distinct keys) O(n) (equal keys) | O(nlog(n)) | O(nlog(n)) | O(1) | No |
+
+*a sorting algorithm is said to be stable if two objects with equal keys appear
+in the output in the same order they were in the input*
 
 ## dynamic programming
 Dynamic programming is thought to be as the opposite approach that recursion

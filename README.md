@@ -334,6 +334,28 @@ Common problems solved using dynamic programming
 * the knapsack problem
 * egg dropping problem
 
+# threads & locks
+* deadlock
+    * occurs if and only if all the *Coffman conditions* are tru:
+        * mutual exclusion: at least one resource must be held in a
+            non-shareable mode. Otherwise, the processes would not be prevented
+            from using the resource when necessary. Only one process can use the
+            resource at any given time.
+        * hold & wait (or resource holding): a process is currently holding at
+            least one resource and requesting additional resource which are
+            being held by other processes
+        * no preemption: a resource can be released only voluntarily by the
+            process holding it.
+            * preemption is the act of interrupting a task being carried out by
+                a computer system, without requiring its coorperation, and with
+                the intention of resuming the task at a later time. context
+                switches are a perfect example of preemption where a higher
+                priveleged scheduler, which has the power to preempt, or
+                interrupt tasks on the system.
+        * circular wait: each proces must be waiting for a resource which is
+            being held by another process, which in turn is waiting for the
+            first process to release the resource.
+
 ## References
 * [Tree (Data Structure) - Wikipedia](https://en.wikipedia.org/wiki/Tree_(data_structure))
 * [Know Thy Complexities!](http://bigocheatsheet.com)
